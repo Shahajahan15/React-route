@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
+import './../App.css';
+import './../My.scss';
 
-class portfolio extends Component {
+class Portfolio extends Component {
     render() {
         return (
             <div>
-                <h1>Portfolio</h1>
+                <h1 className="Textstyle">Portfolio</h1>
             </div>
         );
     }
 }
 
-export default portfolio;
+export default Portfolio;

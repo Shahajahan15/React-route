@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
+import './../App.css';
+import './../My.scss';
 
-class about extends Component {
+class About extends Component {
     render() {
         return (
             <div>
-                <h1>About</h1>
+                <h1 className="Textstyle">About</h1>
             </div>
         );
     }
 }
 
-export default about;
+export default About;

@@ -1,0 +1,9 @@
+$namecolor: rgba(219, 21, 21, 0.795);
+$backcolor: #dfd;
+$mypadding: 40px;
+
+.Textstyle{
+    color: $namecolor;
+    background: $backcolor;
+    padding: $mypadding;
+}
