@@ -1,12 +1,20 @@
 import React, { Component } from 'react';
-
+import {Redirect} from 'react-router-dom';
 class page1 extends Component {
     render() {
-        return (
-            <div>
-                <h1>Page 01</h1>
-            </div>
-        );
+
+        // session check before login
+        if (sessionStorage.getItem("UserName")==null) {
+            return <Redirect to="/Login"/>
+        }
+        else
+        {
+            return (
+                <div>
+                    <h1>Page 01</h1>
+                </div>
+            );
+        }
     }
 }
 

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Redirect} from 'react-router-dom';
 
 class page3 extends Component {
 
@@ -10,12 +11,20 @@ class page3 extends Component {
         }
     }
     render() {
-        return (
-            <div>
-                <h1>Page 03</h1>
-                <h1>{this.state.myDats}</h1> {/* view data */}
-            </div>
-        );
+
+        // session check before login
+        if (sessionStorage.getItem("UserName")==null) {
+            return <Redirect to="/Login"/>
+        }
+        else
+        {
+            return (
+                <div>
+                    <h1>Page 03</h1>
+                    <h1>{this.state.myDats}</h1> {/* view data */}
+                </div>
+            );
+        }
     }
 }
 

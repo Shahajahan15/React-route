@@ -7,6 +7,7 @@ import page4 from './pages/page4';
 import Home from './pages/Home';
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import notFound from './pages/notFound';
+import Login from './pages/Login';
 
 class MyRoute extends Component {
     render() {
@@ -14,9 +15,10 @@ class MyRoute extends Component {
             <div className="d-inline">
                 <Switch>
                     <Route exact path="/" component={Home}></Route>
+                    <Route exact path="/login" component={Login}></Route>
                     <Route path="/page1" component={page1}></Route>
                     <Route path="/page2" component={page2}></Route>
-                    <Route path="/page3/:getDatas" component={page3}></Route> {/*get data*/}
+                    <Route path="/page3" component={page3}></Route> {/*get data*/}
                     <Route path="/page4" component={page4}></Route>
                     <Route component={notFound}></Route>
                 </Switch>

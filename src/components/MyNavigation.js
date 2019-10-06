@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {NavLink} from 'react-router-dom';
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import Login from './pages/Login';
 
 class MyNavigation extends Component {
     render() {
