@@ -1,0 +1,20 @@
+
+# 'npx create-react-app Project_name'  to start 
+# 'npm install react-router-dom --save'  to install router dom
+# 'cd .\directory name' to change directory
+# 'npm start' to start project
+# 'import ReactDOM from 'react-dom'; '  to impoert ReactDom
+# 'import { BrowserRouter as Router, Route, Link } from  './node_modules/react-router-dom'; ' to import router dom
+# 'npm run build' to build the project, to hosting
+# 'npm install node-sass' to install sass
+# 'npm install --save bootstrap' to install bootstrap
+# 'npm install axios ' to send/receive http request on server
+
+# componentDidMount(){}' use to get data from server
+#  -> '{ axios.get(here url) .then() .catch() }
+#  -> .then(response_array=>{console.log(response.data)})  to show data in console
+#  -> .catch({console.log(error)})  show error in console
+
+# 'npm install react-table' to show data
+# 'import ReactTable from 'react-table'; & import 'react-table/react-table.css';'
+# 'return( <div> <ReactTable data={data_array_list}, columns={col_array_list}, defaultPageSize={20}, pageSizeOptions={[10,15,20,25,30]} /> </div> '
